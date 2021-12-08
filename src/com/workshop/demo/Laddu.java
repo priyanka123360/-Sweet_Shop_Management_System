@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Laddu extends Sweet {
 	public Laddu() {
-	shape =  "roung";
-	colour = "yellow";
+	shape =  Shape.TRIANGLE;
+	colour = Colour.WHITE;
 	ingredient = new ArrayList();
 	ingredient.add("Sugar");
-	ingredient.add("Floar");
+	ingredient.add("Flour");
 	name = "Laddu";
 	}
 }

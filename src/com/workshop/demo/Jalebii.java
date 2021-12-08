@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Jalebii extends Sweet {
 	public Jalebii() {
-		shape =  "roung";
-		colour = "yellow";
+		shape =  Shape.SQUARE;
+		colour = Colour.RED;
 		ingredient = new ArrayList();
 		ingredient.add("Sugar");
 		ingredient.add("Flour");

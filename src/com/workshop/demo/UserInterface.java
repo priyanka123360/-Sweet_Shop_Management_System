@@ -5,7 +5,20 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class UserInterface {
-	public final int Exit_Value = 5;
+	private static UserInterface instance;
+	private final int Exit_Value = 5;
+	
+	private UserInterface() {
+		
+	}
+	
+	public static UserInterface getInstance() {
+		if (instance == null) {
+			instance = new UserInterface();
+		}
+		return instance;
+	}
+	
 	public  void PrintAllSweet(Set<Sweet> sweetList) {
 		//for (int i = 0; i < sweetList.size(); i++ )
 		//System.out.println(sweetList.get(i));

@@ -4,8 +4,12 @@ import java.util.List;
 import java.util.Objects;
 
 public class Sweet {
-	String shape;
-	String colour;
+	
+	enum Shape{TRIANGLE, SQUARE, ROUND, RECTANGLE}
+	enum Colour{RED, GREEN, YELLOW, WHITE, BROWN}
+	
+	Shape shape;
+	Colour colour;
 	int price;
 	List<String> ingredient;
 	String name;
@@ -32,6 +36,10 @@ public class Sweet {
 		return Objects.equals(colour, other.colour) && Objects.equals(ingredient, other.ingredient)
 				&& Objects.equals(name, other.name) && price == other.price && Objects.equals(shape, other.shape);
 	}
+
+	
+
+	
 
 	
 }
